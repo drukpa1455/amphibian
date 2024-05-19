@@ -1,0 +1,10 @@
+version: '3'
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "5001:5000"  # Change host port to 5001
+  frontend:
+    build: ./frontend/leadqual
+    ports:
+      - "3000:3000"
